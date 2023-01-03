@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./FONTS/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+strong {
+    color: #f2994a;
+}
+
+h3 {
+    font-weight: 700;
+    font-family: Montserrat;
+    margin-bottom: .5rem;
+
+}
+
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+
+}
+
+.shopping-card {
+    padding: 1rem;
+    background-color: #EEEEEE;
+    height: fit-content;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-family: Montserrat;
+    width: 25rem
+}
+
+.back-bag {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 0.5rem;
+
+}
+
+
+.back-img {
+    grid-row: span 2;
+}
+
+.shoes {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+}
+
+.shoe-img {
+    grid-row: span 2;
+    margin-bottom: 2rem;
+
+}
+
+img {
+    border-radius: 10px;
+    margin-right: 20px;
+  
+    width: 10rem;
+}
+
+.quantity_counter {
+    display: flex;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+    margin-top: 0;
+    padding: .2rem .5rem;
+    gap: 0.7rem;
+}
+
+.back-bag i {
+    cursor: pointer;
+}
+
+#second_quantity,
+#third_quantity,
+#first_quantity {
+
+    width: 1rem;
+    text-align: center;
+}
+
+.remove-btn {
+
+    width: fit-content;
+    margin: 1rem 0;
+}
+
+.remove-btn .btn {
+    background-color: rgb(247, 43, 43);
+    border-radius: 5px;
+    padding: 3px 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    opacity: .9;
+}
+
+
+
+.total {
+    margin: 1rem 0;
+}
+
+.total_var,
+.total_cost,
+.total_sub,
+.total_tax {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .7rem;
+}
+
+
+
+@media only screen and (max-width: 540px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: auto;
+        grid-template-columns: 100%;
+        width: 90%;
+        grid-template-rows: 500px 1fr;
+        grid-template-areas: "top""bottom";
+    }
+
+   
+
+    .cards {
+        grid-area: top;
+        width: 100%;
+        margin: auto
+    }
+
+    .shopping-card {
+        width: 100%;
+        margin-left: 0;
+        height: 500px;
+
+    }
+
+    .cards img {
+        height: 180px;
+        width: 100%;
+    }
+
+    .back-bag__name,
+    .shoe__name {
+        padding-left: 20px;
+    }
+
+    .quantity_counter {
+        width: 50%;
+        margin-top: 5px;
+        padding: .5rem 0;
+        font-size: bolder;
+        margin-left: 20px;
+    }
+
+    .quantity_counter button {
+        margin: auto;
+    }
+
+
+    .fa-heart {
+        cursor: pointer;
+        background-color:black;
+        color:rgb(255, 255, 255);
+        border-radius: 8px;
+        margin-left: 10px;
+     }
+    
+}
+
+
+
